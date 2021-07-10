@@ -25,6 +25,26 @@ The root folder contains the following scripts correlated with each experiment p
 * **Exp3.py** Script used to compute the Average Shortest Path Length among the source spreaders selected by the methods selected. It takes as input a complex network, the range of spreaders, and the name of the set of methods. 
 * **Exp4.py** Performs a comparison of the Final Spreading Scope achieved for each method using the distribution strategy used by PBSI. It takes as input a complex network, the spreading probability, and the name of the set of methods. 
 
+### Input Graphs
+* Input graphs must be in **GraphML** format. 
+* Graphs must be connected with only one component. When more than one component is present, only the giant must be kept. 
+* Additional graphs used in the paper can be downloaded from: 
+
+| Network | url | 
+| -: | :- |
+| **USAir**             |  http://vlado.fmf.uni-lj.si/pub/networks/data/    |
+| **NetSci**            |  http://networkrepository.com/netscience.php      |
+| **Email EU Core**     | https://snap.stanford.edu/data/email-Eu-core.html |
+| **PGP**               | http://networkrepository.com/PGPgiantcompo.php    |
+| **CondMat**           | https://snap.stanford.edu/data/ca-CondMat.html    |
+| **Email EU All**      | https://snap.stanford.edu/data/email-EuAll.html   |
+| **Amazon**            | https://snap.stanford.edu/data/amazon0302.html    |
+| **DBLP**              | https://snap.stanford.edu/data/com-DBLP.html      |
+| **YouTube**           | https://snap.stanford.edu/data/com-Youtube.html   |
+    
+
+
+
 For each script, you need to specify all the above-described parameters, optional parameters to modify the number of Monte Carlo simulations, and SIR recovering probability are also available.  The results are stored in the **Plot** directory.
 
 Python and libraries versions currently used:
